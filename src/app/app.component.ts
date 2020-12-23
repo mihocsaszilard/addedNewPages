@@ -7,14 +7,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  styleUrls: ['app.component.scss'], 
 })
+
 export class AppComponent {
+  navigate: any;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
+    this.sideMenu();
     this.initializeApp();
   }
 
@@ -24,4 +27,36 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+sideMenu()
+{
+  this.navigate=
+  [
+    {
+      title : "Dashboard",
+      url : "/tab1",
+      icon : "menu-outline"
+    },
+    {
+      title : "Profile",
+      url : "/tab2",
+      icon : "people-outline"
+    },
+    {
+      title : "Share",
+      url : "/tab3",
+      icon : "share-outline"
+    },
+    {
+      title : "About",
+      url : "/tab4",
+      icon : "information-circle-outline"
+    },
+    {
+      title : "Settings",
+      url : "/tab5",
+      icon : "settings-outline"
+    }
+  ]
+}
 }
