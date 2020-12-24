@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+ion-title{
+    color: rgb(128, 128, 128);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-image: linear-gradient(rgb(0, 0, 0,.0),rgb(0, 0, 0,.0),rgb(0, 0, 0,.0),rgb(0,0,0,.0),rgba(47, 60, 68, 0.5));
+}
